@@ -1,7 +1,7 @@
 # Matchy Matchy
 
 ## Introduction
-FashionRecommendationApp is an innovative mobile application that revolutionizes the way users discover and explore fashion items. Whether you prefer typing your specifications or importing a photo, this app leverages cutting-edge technologies to recommend the most similar and stylish clothes just for you.
+Matchy Matchy is an innovative mobile application that revolutionizes the way users discover and explore fashion items. Whether you prefer typing your specifications or importing a photo, this app leverages cutting-edge technologies to recommend the most similar and stylish clothes just for you.
 
 ## Key Features
 - **Clothes Classification with YOLOv7:** Utilizing the power of YOLOv7, our app accurately identifies and classifies various clothing items from images. This ensures precise recognition of user-specified preferences.
