@@ -19,11 +19,6 @@ Matchy Matchy is an innovative mobile application that revolutionizes the way us
 2. **AI Processing:** The app utilizes YOLOv7 for clothes classification and VGG16 for image similarity to understand user preferences.
 3. **Personalized Recommendations:** Receive a curated list of clothing items that closely match the specified preferences.
 
-## Installation
-1. Clone the repository: `git clone https://github.com/your-username/FashionRecommendationApp.git`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run the app: `python app.py`
-
 ### Dependencies
 - **Numpy**
 - **matplotlib**
