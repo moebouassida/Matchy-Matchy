@@ -1,47 +1,50 @@
 # Matchy Matchy
 
-## Introduction
-Matchy Matchy is an innovative mobile application that revolutionizes the way users discover and explore fashion items. Whether you prefer typing your specifications or importing a photo, this app leverages cutting-edge technologies to recommend the most similar and stylish clothes just for you.
+## Overview
+**Matchy Matchy** is a prototype fashion recommendation system that enables users to discover clothing items through image search or text queries. Built during my student days as an exploratory project, it combines computer vision, image similarity search, and chatbot interaction to provide personalized style recommendations.
 
-## Key Features
-- **Clothes Classification with YOLOv7:** Utilizing the power of YOLOv7, our app accurately identifies and classifies various clothing items from images. This ensures precise recognition of user-specified preferences.
+> ⚠ **Note:** This repository contains the original experimental code from 2 years ago, mostly in `.ipynb` notebooks. It is not production-ready, but serves as a demonstration of the concepts and models used.
 
-- **Image Similarity using VGG16:** We employ the VGG16 model to assess image similarity, providing users with recommendations that closely match their selected or uploaded clothing styles. This enhances the personalization and relevance of suggested items.
-  
-- **Chatbot Interaction:** Engage in a conversation with our intelligent chatbot to further refine your fashion preferences, receive personalized styling tips, and explore a wide range of clothing options.
+---
 
-- **User-Friendly Interface:** The app offers a seamless and intuitive user interface, allowing users to easily input their preferences, either through text or by importing photos. The recommendation engine processes the input swiftly, delivering tailored suggestions.
+## Features
+- **Clothing Classification (YOLOv7)**  
+  Detects and classifies clothing items from uploaded images with high accuracy.
 
-- **Responsive Design:** FashionRecommendationApp is designed to be responsive across various devices, ensuring a consistent and enjoyable user experience on both smartphones and tablets.
+- **Image Similarity Search (VGG16)**  
+  Finds visually similar clothing styles by comparing extracted image features.
 
-## How to Use
-1. **Input Preferences:** Users can type their clothing specifications or import a photo of a desired style.
-2. **AI Processing:** The app utilizes YOLOv7 for clothes classification and VGG16 for image similarity to understand user preferences.
-3. **Personalized Recommendations:** Receive a curated list of clothing items that closely match the specified preferences.
+- **Chatbot Interaction**  
+  A simple chatbot interface for refining style preferences and exploring recommendations.
 
-### Dependencies
-- **Numpy**
-- **matplotlib**
-- **Selenium**
-- -**OpenCV**
-- **Sklearn**
-- **TensorFlow**
-- **React Native**
+- **Multi-Modal Input**  
+  Search by uploading a photo or typing a description.
 
-## Acknowledgments
+- **Responsive UI Concept**  
+  Designed for cross-device usability in a future mobile app (React Native prototype).
 
-We would like to express our gratitude to the following individuals and projects that have contributed to the development and success of FashionRecommendationApp:
+---
 
+## How It Works
+1. **User Input** – Provide a clothing photo or describe your style in text.  
+2. **Processing** –  
+   - YOLOv7 detects clothing types.  
+   - VGG16 extracts image features for similarity matching.  
+3. **Recommendations** – The system returns a list of visually similar clothing items.  
+4. **Chatbot Refinement** – Optional text-based interaction to refine results.
 
-- **YOLOv7:** Special thanks to the developers behind YOLOv7 for providing a robust solution for clothes classification.
+---
 
-- **VGG16:** We appreciate the contributions of the creators of VGG16 for their work on image similarity, enhancing the personalized recommendation experience.
+## Tech Stack
+- **Computer Vision:** YOLOv7, VGG16 (TensorFlow/Keras)  
+- **Data Processing:** NumPy, OpenCV, scikit-learn, matplotlib  
+- **Automation:** Selenium (for image scraping in early experiments)  
+- **Frontend Prototype:** React Native
 
-- **Chatbot Frameworks:** Our sincere thanks to the developers of chatbot frameworks that have enabled the integration of intelligent chatbot interaction within the app.
+---
 
-- **Contributors:** A shout-out to all the contributors who have dedicated their time and efforts to improving Matchy Matchy.
+## Installation & Dependencies
+To run the notebooks, install the following:
 
-
-If we have inadvertently missed anyone, please accept our apologies and know that your contributions are highly valued.
-
-
+```bash
+pip install numpy matplotlib opencv-python scikit-learn selenium tensorflow
